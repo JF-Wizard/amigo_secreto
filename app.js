@@ -74,16 +74,9 @@ function sortearAmigo() {
     //  Mostrar el resultado en la interfaz
     document.getElementById("resultado").textContent = `🎁 El amigo secreto es: ${amigoSecreto}`;
 
-    // Reiniciar la lista después del sorteo
-    resetear();
+    
 }
 
-// Función para reiniciar la lista
-function resetear() {
-    listaAmigos = []; // Vaciamos el array
-    document.getElementById("listaAmigos").innerHTML = ""; // Limpia la lista en la interfaz
-    document.getElementById("resultado").textContent = ""; // Borrar el resultado 
-}
 
 // Permitir agregar nombres al presionar "Enter"
 document.getElementById("amigo").addEventListener("keypress", function (event) {
